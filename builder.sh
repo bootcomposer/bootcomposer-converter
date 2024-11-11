@@ -24,9 +24,9 @@ for url_filename in "${URLS[@]}"; do
         continue
     fi
     
-    # Unzip the file
+    # Unzip the file directly into the EXTRACT_DIR without subdirectories
     echo "Unzipping $filename..."
-    if ! unzip "$filename" -d "$EXTRACT_DIR/${filename%.zip}"; then
+    if ! unzip -q "$filename" -d "$EXTRACT_DIR"; then
         echo "Failed to unzip $filename"
         rm "$filename"
         continue
