@@ -1,14 +1,14 @@
 #!/bin/bash
 # Define the URLs and desired filenames
 URLS=(
-    "https://github.com/bootcomposer/wp-pace/archive/refs/tags/V1.0.zip wp-pace-v1.0.zip"
-    "https://github.com/bootcomposer/admin-pro/archive/refs/tags/v1.0.zip admin-pro-v1.0.zip"
-    "https://github.com/bootcomposer/searchable-select/archive/refs/tags/v1.0.zip searchable-select-v1.0.zip"
-    "https://github.com/bootcomposer/enable-disable-features/archive/refs/tags/v1.0.zip enable-disable-features-v1.0.zip"
+    "https://github.com/bootcomposer/wp-pace/archive/refs/tags/V1.0.zip wp-pace.zip"
+    "https://github.com/bootcomposer/admin-pro/archive/refs/tags/v1.0.zip admin-pro.zip"
+    "https://github.com/bootcomposer/searchable-select/archive/refs/tags/v1.0.zip searchable-select.zip"
+    "https://github.com/bootcomposer/enable-disable-features/archive/refs/tags/v1.0.zip enable-disable-features.zip"
 )
 
 # Create a directory for extracted files
-EXTRACT_DIR="plugins"
+EXTRACT_DIR="./"
 mkdir -p "$EXTRACT_DIR"
 
 # Loop through each URL and filename
